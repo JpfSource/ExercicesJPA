@@ -25,7 +25,6 @@ public class ELivre {
 	public int getId() {
 		return id;
 	}
-
 	/**
 	 * @param id the id to set
 	 */
@@ -39,7 +38,6 @@ public class ELivre {
 	public String getTitre() {
 		return titre;
 	}
-
 	/**
 	 * @param titre the titre to set
 	 */
@@ -53,11 +51,17 @@ public class ELivre {
 	public String getAuteur() {
 		return auteur;
 	}
-
 	/**
 	 * @param auteur the auteur to set
 	 */
 	public void setAuteur(String auteur) {
 		this.auteur = auteur;
 	}
+
+	@Override
+	public String toString() {
+		return "ELivre [id=" + id + ", titre=" + titre + ", auteur=" + auteur + "]";
+	}
+	
+	
 }

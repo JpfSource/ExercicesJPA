@@ -124,4 +124,8 @@ public class EEmprunt {
 		this.empruntClients = empruntClients;
 	}
 
+	@Override
+	public String toString() {
+		return "EEmprunt [id=" + id + ", dateDebut=" + dateDebut + ", dateFin=" + dateFin + ", delai=" + delai +"]";
+	}
 }

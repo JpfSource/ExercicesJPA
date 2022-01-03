@@ -20,23 +20,16 @@ public class EClient {
 	
 	@OneToMany(mappedBy = "empruntClients")
 	private Set<EEmprunt> clientEmprunts;
-
 	
 	public EClient() {
-
 	}
 
-	
-	
 	/**
 	 * @return the clientEmprunts
 	 */
 	public Set<EEmprunt> getClientEmprunts() {
 		return clientEmprunts;
 	}
-
-
-
 	/**
 	 * @param clientEmprunts the clientEmprunts to set
 	 */
@@ -44,15 +37,12 @@ public class EClient {
 		this.clientEmprunts = clientEmprunts;
 	}
 
-
-
 	/**
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
-
 	/**
 	 * @param id the id to set
 	 */
@@ -87,7 +77,9 @@ public class EClient {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return "EClient [id=" + id + ", nom=" + nom + ", prenom=" + prenom + "]";
+	}
 }
